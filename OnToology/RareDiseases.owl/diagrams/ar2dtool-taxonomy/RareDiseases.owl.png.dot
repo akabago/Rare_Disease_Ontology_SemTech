@@ -1,0 +1,30 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:WayOfTransmission" "base:NervousSystem" "base:ReproductiveSystem" "base:ORCID" "base:ID" "base:GeneID" "base:AutosomalRecessive" "base:DOI" "base:EndocrineSystem" "base:BodySystem" "base:Somatic" "base:ExcretorySystem" "base:Monogenetic" "base:DigestiveSystem" "base:Chromosomic" "base:XLinked" "base:Poligenetic" "base:NotInherited" "base:AutosomalDominant" "base:Sexual" "base:TypeOfInheritance" "base:Disease" "base:RespiratorySystem" "base:Genetic" "base:LocomotorSystem" "base:UniProtID" "base:Inherited" "base:RareDisease" "base:CirculatorySystem" "base:YLinked" "base:Chromosome" ; /*classes style*/
+	"base:XLinked" -> "base:TypeOfInheritance" [ label = "rdfs:subClassOf" ];
+	"base:DOI" -> "base:ID" [ label = "rdfs:subClassOf" ];
+	"base:Inherited" -> "base:WayOfTransmission" [ label = "rdfs:subClassOf" ];
+	"base:NervousSystem" -> "base:BodySystem" [ label = "rdfs:subClassOf" ];
+	"base:NotInherited" -> "base:WayOfTransmission" [ label = "rdfs:subClassOf" ];
+	"base:LocomotorSystem" -> "base:BodySystem" [ label = "rdfs:subClassOf" ];
+	"base:Somatic" -> "base:Chromosome" [ label = "rdfs:subClassOf" ];
+	"base:Monogenetic" -> "base:Genetic" [ label = "rdfs:subClassOf" ];
+	"base:GeneID" -> "base:ID" [ label = "rdfs:subClassOf" ];
+	"base:Chromosomic" -> "base:Genetic" [ label = "rdfs:subClassOf" ];
+	"base:RareDisease" -> "base:Disease" [ label = "rdfs:subClassOf" ];
+	"base:AutosomalDominant" -> "base:TypeOfInheritance" [ label = "rdfs:subClassOf" ];
+	"base:RespiratorySystem" -> "base:BodySystem" [ label = "rdfs:subClassOf" ];
+	"base:UniProtID" -> "base:ID" [ label = "rdfs:subClassOf" ];
+	"base:AutosomalRecessive" -> "base:TypeOfInheritance" [ label = "rdfs:subClassOf" ];
+	"base:DigestiveSystem" -> "base:BodySystem" [ label = "rdfs:subClassOf" ];
+	"base:ExcretorySystem" -> "base:BodySystem" [ label = "rdfs:subClassOf" ];
+	"base:YLinked" -> "base:TypeOfInheritance" [ label = "rdfs:subClassOf" ];
+	"base:ORCID" -> "base:ID" [ label = "rdfs:subClassOf" ];
+	"base:CirculatorySystem" -> "base:BodySystem" [ label = "rdfs:subClassOf" ];
+	"base:EndocrineSystem" -> "base:BodySystem" [ label = "rdfs:subClassOf" ];
+	"base:ReproductiveSystem" -> "base:BodySystem" [ label = "rdfs:subClassOf" ];
+	"base:Sexual" -> "base:Chromosome" [ label = "rdfs:subClassOf" ];
+	"base:Poligenetic" -> "base:Genetic" [ label = "rdfs:subClassOf" ];
+
+}
