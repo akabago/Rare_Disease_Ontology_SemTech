@@ -1,0 +1,399 @@
+{
+  "@context" : {
+    "RareDisease" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/RareDisease"
+    },
+    "Inherited" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/Inherited"
+    },
+    "isNotTransmited" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/isNotTransmited",
+      "@type" : "@id"
+    },
+    "hasPrognosis" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrognosis",
+      "@type" : "@id"
+    },
+    "LocomotorSystem" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/LocomotorSystem"
+    },
+    "diagnostic_procedure_time" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnostic_procedure_time",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "what_is_affected" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/what_is_affected",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Sexual" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/Sexual"
+    },
+    "Publication" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/Publication"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "encodesFor" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/encodesFor",
+      "@type" : "@id"
+    },
+    "valueORCID" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/valueORCID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Chromosome" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/Chromosome"
+    },
+    "Prognosis" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/Prognosis"
+    },
+    "endocrine_organ" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/endocrine_organ",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "name_protein" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/name_protein",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "chr_letter" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/chr_letter",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "appearsDocumentedIn" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/appearsDocumentedIn",
+      "@type" : "@id"
+    },
+    "hasPublication" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPublication",
+      "@type" : "@id"
+    },
+    "hasORCID" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/hasORCID",
+      "@type" : "@id"
+    },
+    "WayOfTransmission" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/WayOfTransmission"
+    },
+    "life_quality" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/life_quality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ReproductiveSystem" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/ReproductiveSystem"
+    },
+    "BodySystem" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/BodySystem"
+    },
+    "Somatic" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/Somatic"
+    },
+    "isTransmited" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/isTransmited",
+      "@type" : "@id"
+    },
+    "hasSymptom" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/hasSymptom",
+      "@type" : "@id"
+    },
+    "NervousSystem" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/NervousSystem"
+    },
+    "DOI" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/DOI"
+    },
+    "treatment_description" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment_description",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "wasDiscoveredBy" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/wasDiscoveredBy",
+      "@type" : "@id"
+    },
+    "DiagnosticProcedure" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/DiagnosticProcedure"
+    },
+    "EndocrineSystem" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/EndocrineSystem"
+    },
+    "orcid" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid"
+    },
+    "locus" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/locus",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Poligenetic" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/Poligenetic"
+    },
+    "valueDOI" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/valueDOI",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "reproductive_organ" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/reproductive_organ",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Disease" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/Disease"
+    },
+    "gene" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/gene"
+    },
+    "symptom_description" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom_description",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "name_raredisease" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/name_raredisease",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Treatment" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/Treatment"
+    },
+    "Investigator" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/Investigator"
+    },
+    "life_expectancy" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/life_expectancy",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "nervous_organ" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/nervous_organ",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "excretory_organ" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/excretory_organ",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "location" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/location",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Symptom" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/Symptom"
+    },
+    "affectsSeveralGenes" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsSeveralGenes",
+      "@type" : "@id"
+    },
+    "hasAuthor" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/hasAuthor",
+      "@type" : "@id"
+    },
+    "respiratory_organ" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/respiratory_organ",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "valueGeneID" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/valueGeneID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ID" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/ID"
+    },
+    "affectsToBodySystem" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsToBodySystem",
+      "@type" : "@id"
+    },
+    "DigestiveSystem" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/DigestiveSystem"
+    },
+    "isSexual" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/isSexual",
+      "@type" : "@id"
+    },
+    "Genetic" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/Genetic"
+    },
+    "hasGeneID" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/hasGeneID",
+      "@type" : "@id"
+    },
+    "AutosomalRecessive" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/AutosomalRecessive"
+    },
+    "disease" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/disease"
+    },
+    "TypeOfInheritance" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/TypeOfInheritance"
+    },
+    "GeneID" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/GeneID"
+    },
+    "clinical_center" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/clinical_center",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Gene" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/Gene"
+    },
+    "last_name" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/last_name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/isDefinedBy",
+      "@type" : "@id"
+    },
+    "function" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/function",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "YLinked" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/YLinked"
+    },
+    "medication" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/medication",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "publicated_on" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/publicated_on",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasDiagnosticProcedure" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDiagnosticProcedure",
+      "@type" : "@id"
+    },
+    "ORCID" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/ORCID"
+    },
+    "first_name" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/first_name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "title" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/title",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "circulatory_organ" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/circulatory_organ",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasTreatment" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/hasTreatment",
+      "@type" : "@id"
+    },
+    "ExcretorySystem" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/ExcretorySystem"
+    },
+    "hasPrevalence" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrevalence",
+      "@type" : "@id"
+    },
+    "isAutosomalR" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/isAutosomalR",
+      "@type" : "@id"
+    },
+    "isYLinked" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/isYLinked",
+      "@type" : "@id"
+    },
+    "isXLinked" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/isXLinked",
+      "@type" : "@id"
+    },
+    "protein" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/protein"
+    },
+    "UniProtID" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/UniProtID"
+    },
+    "affectsOneGene" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsOneGene",
+      "@type" : "@id"
+    },
+    "institution" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/institution",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Monogenetic" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/Monogenetic"
+    },
+    "XLinked" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/XLinked"
+    },
+    "name_gene" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/name_gene",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "chr_number" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/chr_number",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "appereance_age" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/appereance_age",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isSomatic" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/isSomatic",
+      "@type" : "@id"
+    },
+    "hasOrigin" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/hasOrigin",
+      "@type" : "@id"
+    },
+    "valueUniProtID" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/valueUniProtID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Prevalence" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/Prevalence"
+    },
+    "name_disease" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/name_disease",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "AutosomalDominant" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/AutosomalDominant"
+    },
+    "RespiratorySystem" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/RespiratorySystem"
+    },
+    "NotInherited" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/NotInherited"
+    },
+    "name_diagnosticprocedure" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/name_diagnosticprocedure",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasUniProtID" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/hasUniProtID",
+      "@type" : "@id"
+    },
+    "locomotor_organ" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/locomotor_organ",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasDOI" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDOI",
+      "@type" : "@id"
+    },
+    "digestive_organ" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/digestive_organ",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "CirculatorySystem" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/CirculatorySystem"
+    },
+    "journal" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/journal",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Chromosomic" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/Chromosomic"
+    },
+    "isAutosomalD" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/isAutosomalD",
+      "@type" : "@id"
+    },
+    "frequency" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/frequency",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Protein" : {
+      "@id" : "http://www.w3id.org/def/mubc/marinayana/rarediseases/Protein"
+    }
+  }
+}
