@@ -1,0 +1,1226 @@
+@prefix : <http://www.w3id.org/def/mubc/marinayana/rarediseases/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3id.org/def/mubc/marinayana/rarediseases/> .
+
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/> rdf:type owl:Ontology ;
+                                                         <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-nc/4.0/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsOneGene
+:affectsOneGene rdf:type owl:ObjectProperty ,
+                         owl:AsymmetricProperty ;
+                rdfs:domain :Monogenetic ;
+                rdfs:range :Gene .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsSeveralGenes
+:affectsSeveralGenes rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Poligenetic ;
+                     rdfs:range :Gene .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsToBodySystem
+:affectsToBodySystem rdf:type owl:ObjectProperty ,
+                              owl:AsymmetricProperty ;
+                     rdfs:domain :RareDisease ;
+                     rdfs:range :BodySystem .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/appearsDocumentedIn
+:appearsDocumentedIn rdf:type owl:ObjectProperty ,
+                              owl:AsymmetricProperty ;
+                     rdfs:domain :RareDisease ;
+                     rdfs:range :Publication .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/encodesFor
+:encodesFor rdf:type owl:ObjectProperty ,
+                     owl:AsymmetricProperty ;
+            rdfs:domain :Gene ;
+            rdfs:range :Protein .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/hasAuthor
+:hasAuthor rdf:type owl:ObjectProperty ;
+           owl:inverseOf :hasPublication ;
+           rdf:type owl:InverseFunctionalProperty ;
+           rdfs:domain :Publication ;
+           rdfs:range :Investigator .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDOI
+:hasDOI rdf:type owl:ObjectProperty ,
+                 owl:AsymmetricProperty ;
+        rdfs:domain :Publication ;
+        rdfs:range :DOI .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDiagnosticProcedure
+:hasDiagnosticProcedure rdf:type owl:ObjectProperty ,
+                                 owl:AsymmetricProperty ;
+                        rdfs:domain :RareDisease ;
+                        rdfs:range :DiagnosticProcedure .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/hasGeneID
+:hasGeneID rdf:type owl:ObjectProperty ,
+                    owl:AsymmetricProperty ;
+           rdfs:domain :Gene ;
+           rdfs:range :GeneID .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/hasORCID
+:hasORCID rdf:type owl:ObjectProperty ,
+                   owl:AsymmetricProperty ;
+          rdfs:domain :Investigator ;
+          rdfs:range :ORCID .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/hasOrigin
+:hasOrigin rdf:type owl:ObjectProperty ,
+                    owl:AsymmetricProperty ;
+           rdfs:domain :RareDisease ;
+           rdfs:range :Genetic .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrevalence
+:hasPrevalence rdf:type owl:ObjectProperty ,
+                        owl:AsymmetricProperty ;
+               rdfs:domain :Disease ;
+               rdfs:range :Prevalence .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrognosis
+:hasPrognosis rdf:type owl:ObjectProperty ,
+                       owl:AsymmetricProperty ;
+              rdfs:domain :RareDisease ;
+              rdfs:range :Prognosis .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPublication
+:hasPublication rdf:type owl:ObjectProperty ,
+                         owl:InverseFunctionalProperty ;
+                rdfs:domain :Investigator ;
+                rdfs:range :Publication .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/hasSymptom
+:hasSymptom rdf:type owl:ObjectProperty ,
+                     owl:AsymmetricProperty ;
+            rdfs:domain :RareDisease ;
+            rdfs:range :Symptom .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/hasTreatment
+:hasTreatment rdf:type owl:ObjectProperty ,
+                       owl:AsymmetricProperty ;
+              rdfs:domain :RareDisease ;
+              rdfs:range :Treatment .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/hasUniProtID
+:hasUniProtID rdf:type owl:ObjectProperty ,
+                       owl:AsymmetricProperty ;
+              rdfs:domain :Protein ;
+              rdfs:range :UniProtID .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/isAutosomalD
+:isAutosomalD rdf:type owl:ObjectProperty ;
+              rdfs:domain :Inherited ;
+              rdfs:range :AutosomalDominant .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/isAutosomalR
+:isAutosomalR rdf:type owl:ObjectProperty ;
+              rdfs:domain :Inherited ;
+              rdfs:range :AutosomalRecessive .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/isDefinedBy
+:isDefinedBy rdf:type owl:ObjectProperty ,
+                      owl:AsymmetricProperty ;
+             rdfs:domain :RareDisease ;
+             rdfs:range :Prevalence .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/isNotTransmited
+:isNotTransmited rdf:type owl:ObjectProperty ,
+                          owl:AsymmetricProperty ;
+                 rdfs:domain :Genetic ;
+                 rdfs:range :NotInherited .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/isSexual
+:isSexual rdf:type owl:ObjectProperty ,
+                   owl:AsymmetricProperty ;
+          rdfs:domain :Chromosomic ;
+          rdfs:range :Sexual .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/isSomatic
+:isSomatic rdf:type owl:ObjectProperty ,
+                    owl:AsymmetricProperty ;
+           rdfs:domain :Chromosomic ;
+           rdfs:range :Somatic .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/isTransmited
+:isTransmited rdf:type owl:ObjectProperty ,
+                       owl:AsymmetricProperty ;
+              rdfs:domain :Genetic ;
+              rdfs:range :Inherited .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/isXLinked
+:isXLinked rdf:type owl:ObjectProperty ;
+           rdfs:domain :Inherited ;
+           rdfs:range :XLinked .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/isYLinked
+:isYLinked rdf:type owl:ObjectProperty ;
+           rdfs:domain :Inherited ;
+           rdfs:range :YLinked .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/wasDiscoveredBy
+:wasDiscoveredBy rdf:type owl:ObjectProperty ,
+                          owl:AsymmetricProperty ;
+                 rdfs:domain :RareDisease ;
+                 rdfs:range :Investigator .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/appereance_age
+:appereance_age rdf:type owl:DatatypeProperty ;
+                rdfs:domain :RareDisease ;
+                rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/chr_letter
+:chr_letter rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Sexual ;
+            rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/chr_number
+:chr_number rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Somatic ;
+            rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/circulatory_organ
+:circulatory_organ rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :CirculatorySystem ;
+                   rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/clinical_center
+:clinical_center rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Treatment ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnostic_procedure_time
+:diagnostic_procedure_time rdf:type owl:DatatypeProperty ;
+                           rdfs:domain :DiagnosticProcedure ;
+                           rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/digestive_organ
+:digestive_organ rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :DigestiveSystem ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/endocrine_organ
+:endocrine_organ rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :EndocrineSystem ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/excretory_organ
+:excretory_organ rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :ExcretorySystem ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/first_name
+:first_name rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Investigator ;
+            rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/frequency
+:frequency rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Prevalence ;
+           rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/function
+:function rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Protein ;
+          rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/institution
+:institution rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Investigator ;
+             rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/journal
+:journal rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Publication ;
+         rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/last_name
+:last_name rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Investigator ;
+           rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/life_expectancy
+:life_expectancy rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Prognosis ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/life_quality
+:life_quality rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Prognosis ;
+              rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/location
+:location rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :clinical_center ;
+          rdfs:domain :Treatment ;
+          rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/locomotor_organ
+:locomotor_organ rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :LocomotorSystem ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/locus
+:locus rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Gene ;
+       rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/medication
+:medication rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Treatment ;
+            rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/name_diagnosticprocedure
+:name_diagnosticprocedure rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :DiagnosticProcedure ;
+                          rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/name_disease
+:name_disease rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Disease ;
+              rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/name_gene
+:name_gene rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Gene ;
+           rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/name_protein
+:name_protein rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Protein ;
+              rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/name_raredisease
+:name_raredisease rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :RareDisease ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/nervous_organ
+:nervous_organ rdf:type owl:DatatypeProperty ;
+               rdfs:domain :NervousSystem ;
+               rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/publicated_on
+:publicated_on rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Publication ;
+               rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/reproductive_organ
+:reproductive_organ rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :ReproductiveSystem ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/respiratory_organ
+:respiratory_organ rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :RespiratorySystem ;
+                   rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom_description
+:symptom_description rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Symptom ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Publication ;
+       rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment_description
+:treatment_description rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Treatment ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/valueDOI
+:valueDOI rdf:type owl:DatatypeProperty ;
+          rdfs:domain :DOI ;
+          rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/valueGeneID
+:valueGeneID rdf:type owl:DatatypeProperty ;
+             rdfs:domain :GeneID ;
+             rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/valueORCID
+:valueORCID rdf:type owl:DatatypeProperty ;
+            rdfs:domain :ORCID ;
+            rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/valueUniProtID
+:valueUniProtID rdf:type owl:DatatypeProperty ;
+                rdfs:domain :UniProtID ;
+                rdfs:range xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/what_is_affected
+:what_is_affected rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Chromosomic ;
+                  rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/AutosomalDominant
+:AutosomalDominant rdf:type owl:Class ;
+                   rdfs:subClassOf :TypeOfInheritance ;
+                   owl:disjointWith :AutosomalRecessive ,
+                                    :XLinked ,
+                                    :YLinked .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/AutosomalRecessive
+:AutosomalRecessive rdf:type owl:Class ;
+                    rdfs:subClassOf :TypeOfInheritance ;
+                    owl:disjointWith :XLinked ,
+                                     :YLinked .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/BodySystem
+:BodySystem rdf:type owl:Class .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/Chromosome
+:Chromosome rdf:type owl:Class .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/Chromosomic
+:Chromosomic rdf:type owl:Class ;
+             rdfs:subClassOf :Genetic ;
+             owl:disjointWith :Monogenetic ,
+                              :Poligenetic .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/CirculatorySystem
+:CirculatorySystem rdf:type owl:Class ;
+                   rdfs:subClassOf :BodySystem .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/DOI
+:DOI rdf:type owl:Class ;
+     rdfs:subClassOf :ID ;
+     owl:disjointWith :GeneID ,
+                      :ORCID ,
+                      :UniProtID .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/DiagnosticProcedure
+:DiagnosticProcedure rdf:type owl:Class .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/DigestiveSystem
+:DigestiveSystem rdf:type owl:Class ;
+                 rdfs:subClassOf :BodySystem .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/Disease
+:Disease rdf:type owl:Class ;
+         owl:equivalentClass :disease .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/EndocrineSystem
+:EndocrineSystem rdf:type owl:Class ;
+                 rdfs:subClassOf :BodySystem .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/ExcretorySystem
+:ExcretorySystem rdf:type owl:Class ;
+                 rdfs:subClassOf :BodySystem .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/Gene
+:Gene rdf:type owl:Class ;
+      owl:equivalentClass :gene .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/GeneID
+:GeneID rdf:type owl:Class ;
+        rdfs:subClassOf :ID ;
+        owl:disjointWith :ORCID ,
+                         :UniProtID .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/Genetic
+:Genetic rdf:type owl:Class .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/ID
+:ID rdf:type owl:Class .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/Inherited
+:Inherited rdf:type owl:Class ;
+           rdfs:subClassOf :WayOfTransmission ;
+           owl:disjointWith :NotInherited .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/Investigator
+:Investigator rdf:type owl:Class .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/LocomotorSystem
+:LocomotorSystem rdf:type owl:Class ;
+                 rdfs:subClassOf :BodySystem .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/Monogenetic
+:Monogenetic rdf:type owl:Class ;
+             rdfs:subClassOf :Genetic ;
+             owl:disjointWith :Poligenetic .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/NervousSystem
+:NervousSystem rdf:type owl:Class ;
+               rdfs:subClassOf :BodySystem .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/NotInherited
+:NotInherited rdf:type owl:Class ;
+              rdfs:subClassOf :WayOfTransmission ;
+              owl:disjointWith :TypeOfInheritance .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/ORCID
+:ORCID rdf:type owl:Class ;
+       owl:equivalentClass :orcid ;
+       rdfs:subClassOf :ID ;
+       owl:disjointWith :UniProtID .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/Poligenetic
+:Poligenetic rdf:type owl:Class ;
+             rdfs:subClassOf :Genetic .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/Prevalence
+:Prevalence rdf:type owl:Class .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/Prognosis
+:Prognosis rdf:type owl:Class .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/Protein
+:Protein rdf:type owl:Class ;
+         owl:equivalentClass :protein .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/Publication
+:Publication rdf:type owl:Class .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/RareDisease
+:RareDisease rdf:type owl:Class ;
+             rdfs:subClassOf :Disease .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/ReproductiveSystem
+:ReproductiveSystem rdf:type owl:Class ;
+                    rdfs:subClassOf :BodySystem .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/RespiratorySystem
+:RespiratorySystem rdf:type owl:Class ;
+                   rdfs:subClassOf :BodySystem .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/Sexual
+:Sexual rdf:type owl:Class ;
+        rdfs:subClassOf :Chromosome ;
+        owl:disjointWith :Somatic .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/Somatic
+:Somatic rdf:type owl:Class ;
+         rdfs:subClassOf :Chromosome .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/Symptom
+:Symptom rdf:type owl:Class .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/Treatment
+:Treatment rdf:type owl:Class .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/TypeOfInheritance
+:TypeOfInheritance rdf:type owl:Class .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/UniProtID
+:UniProtID rdf:type owl:Class ;
+           rdfs:subClassOf :ID .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/WayOfTransmission
+:WayOfTransmission rdf:type owl:Class .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/XLinked
+:XLinked rdf:type owl:Class ;
+         rdfs:subClassOf :TypeOfInheritance ;
+         owl:disjointWith :YLinked .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/YLinked
+:YLinked rdf:type owl:Class ;
+         rdfs:subClassOf :TypeOfInheritance .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/disease
+:disease rdf:type owl:Class ;
+         rdfs:isDefinedBy <http://purl.bioontology.org/ontology/SNOMEDCT/64572001> .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/gene
+:gene rdf:type owl:Class ;
+      rdfs:isDefinedBy <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16612> .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid
+:orcid rdf:type owl:Class ;
+       rdfs:isDefinedBy <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C188272> .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/protein
+:protein rdf:type owl:Class ;
+         rdfs:isDefinedBy <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17021> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system1
+:body_system1 rdf:type owl:NamedIndividual ,
+                       :CirculatorySystem ;
+              :circulatory_organ "arteries"^^xsd:string ,
+                                 "veins"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system2
+:body_system2 rdf:type owl:NamedIndividual ,
+                       :NervousSystem ;
+              :nervous_organ "brain"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system3_1
+:body_system3_1 rdf:type owl:NamedIndividual ;
+                :circulatory_organ "aorta"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system3_2
+:body_system3_2 rdf:type owl:NamedIndividual ;
+                :locomotor_organ "finguer bones"^^xsd:string ,
+                                 "spine"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system4
+:body_system4 rdf:type owl:NamedIndividual ;
+              :nervous_organ "seventh cranial nerve"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system5_1
+:body_system5_1 rdf:type owl:NamedIndividual ;
+                :nervous_organ "brain"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system5_2
+:body_system5_2 rdf:type owl:NamedIndividual ;
+                :locomotor_organ "muscles"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/chromosomic5
+:chromosomic5 rdf:type owl:NamedIndividual ;
+              :isNotTransmited :transmission5 ;
+              :isSomatic :somatic5 ;
+              :chr_number "5"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis2
+:diagnosis2 rdf:type owl:NamedIndividual ,
+                     :DiagnosticProcedure ;
+            :diagnostic_procedure_time "postnatal"^^xsd:string ,
+                                       "prenatal"^^xsd:string ;
+            :name_diagnosticprocedure "DNA analysis"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis3
+:diagnosis3 rdf:type owl:NamedIndividual ;
+            :diagnostic_procedure_time "postnatal"^^xsd:string ,
+                                       "prenatal"^^xsd:string ;
+            :name_diagnosticprocedure "Ghent criteria"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis4
+:diagnosis4 rdf:type owl:NamedIndividual ;
+            :name_diagnosticprocedure "clinical criteria"^^xsd:string ,
+                                      "postnatal"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnostic_procedure1
+:diagnostic_procedure1 rdf:type owl:NamedIndividual ,
+                                :DiagnosticProcedure ;
+                       :diagnostic_procedure_time "postnatal"^^xsd:string ;
+                       :name_diagnosticprocedure "flux citometry"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/diasgnosis5
+:diasgnosis5 rdf:type owl:NamedIndividual ;
+             :diagnostic_procedure_time "postnatal"^^xsd:string ;
+             :name_diagnosticprocedure "observation"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/doi1
+:doi1 rdf:type owl:NamedIndividual ,
+               :DOI ;
+      :valueDOI "https://doi.org/10.1157/13127921"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/doi2
+:doi2 rdf:type owl:NamedIndividual ,
+               :DOI ;
+      :valueDOI "https://doi.org/10.1038/nrdp.2017.65"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/doi3
+:doi3 rdf:type owl:NamedIndividual ;
+      :valueDOI "https://doi.org/10.1016/j.repc.2019.09.008"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/gen1
+:gen1 rdf:type owl:NamedIndividual ,
+               :Gene ;
+      :encodesFor :protein1 ;
+      :hasGeneID :gene_id1 ;
+      :locus "Chromosome X: 15,319,452-15,335,554"^^xsd:string ;
+      :name_gene "PIGA"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/gen2
+:gen2 rdf:type owl:NamedIndividual ;
+      :encodesFor :protein2 ,
+                  :protein4_2 ;
+      :hasGeneID :gene_id2 ;
+      :locus "Chromosome X: 147,911,919-147,951,125"^^xsd:string ;
+      :name_gene "FMR1"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/gen3
+:gen3 rdf:type owl:NamedIndividual ;
+      :encodesFor :protein3 ;
+      :hasGeneID :gene_id3 ;
+      :locus "Chromosome 15: 48,408,313-48,645,721"^^xsd:string ;
+      :name_gene "FBN1"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/gen4_1
+:gen4_1 rdf:type owl:NamedIndividual ;
+        :encodesFor :protein4_1 ;
+        :hasGeneID :gene_id4 ;
+        :locus "Chromosome 3: 129,555,214-129,606,676"^^xsd:string ;
+        :name_gene "PLXND1"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/gen4_2
+:gen4_2 rdf:type owl:NamedIndividual ;
+        :hasGeneID :gene_id42 ;
+        :locus "Chromosome 6: 111,299,028-111,483,715"^^xsd:string ;
+        :name_gene "REV3L"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id1
+:gene_id1 rdf:type owl:NamedIndividual ,
+                   :GeneID ;
+          :valueGeneID "ENSG00000165195"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id2
+:gene_id2 rdf:type owl:NamedIndividual ;
+          :valueGeneID "ENSG00000102081"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id3
+:gene_id3 rdf:type owl:NamedIndividual ;
+          :valueGeneID "ENSG00000166147"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id4
+:gene_id4 rdf:type owl:NamedIndividual ;
+          :valueGeneID "ENSG00000004399"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id42
+:gene_id42 rdf:type owl:NamedIndividual ;
+           :valueGeneID "ENSG00000009413"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/inheritance2
+:inheritance2 rdf:type owl:NamedIndividual .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/inheritance3
+:inheritance3 rdf:type owl:NamedIndividual .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator1
+:investigator1 rdf:type owl:NamedIndividual ,
+                        :Investigator ;
+               :hasORCID :orcid1 ;
+               :first_name "Pilar"^^xsd:string ;
+               :institution "Johns Hopkins University School of Medicine"^^xsd:string ;
+               :last_name "Hernandez Campo"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator2
+:investigator2 rdf:type owl:NamedIndividual ,
+                        :Investigator ;
+               :first_name "Randi"^^xsd:string ;
+               :institution "University of California"^^xsd:string ;
+               :last_name "Hagerman"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator3
+:investigator3 rdf:type owl:NamedIndividual ;
+               :hasORCID :orcid3 ;
+               :hasPublication :publication3 ;
+               :first_name "Gomes"^^xsd:string ,
+                           "Sonia"^^xsd:string ;
+               :institution "Centro Hospitalar Universitário Cova da Beira"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/monogenetic1
+:monogenetic1 rdf:type owl:NamedIndividual ,
+                       :Monogenetic ;
+              :affectsOneGene :gen1 ;
+              :isNotTransmited :transmission1 .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/monogenetic2
+:monogenetic2 rdf:type owl:NamedIndividual ,
+                       :Monogenetic ;
+              :affectsOneGene :gen2 ;
+              :isTransmited :transmission2 .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/monogenetic3
+:monogenetic3 rdf:type owl:NamedIndividual ;
+              :affectsOneGene :gen3 ;
+              :isTransmited :transmission3 .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid1
+:orcid1 rdf:type owl:NamedIndividual ,
+                 :ORCID ;
+        :valueORCID "0000-5555-1188-4444"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid2
+:orcid2 rdf:type owl:NamedIndividual ,
+                 :ORCID ;
+        :valueORCID "0001-7676-9999-5454"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid3
+:orcid3 rdf:type owl:NamedIndividual ;
+        :valueORCID "0201-9898-8787-4445"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/poligenic4
+:poligenic4 rdf:type owl:NamedIndividual ;
+            :affectsSeveralGenes :gen4_1 ,
+                                 :gen4_2 ;
+            :isNotTransmited :transmission4 .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence1
+:prevalence1 rdf:type owl:NamedIndividual ,
+                      :Prevalence ;
+             :frequency "1-9 / 100 000"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence2
+:prevalence2 rdf:type owl:NamedIndividual ,
+                      :Prevalence ;
+             :frequency "1 / 5000"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence3
+:prevalence3 rdf:type owl:NamedIndividual ;
+             :frequency "1-5 / 10 000"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence4
+:prevalence4 rdf:type owl:NamedIndividual ;
+             :frequency "1 / 500 000"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence5
+:prevalence5 rdf:type owl:NamedIndividual ;
+             :frequency "1 / 20 000 - 50 000"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis1
+:prognosis1 rdf:type owl:NamedIndividual ,
+                     :Prognosis ;
+            :life_expectancy "10-15 years"^^xsd:string ,
+                             "significantly affected"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis2
+:prognosis2 rdf:type owl:NamedIndividual ,
+                     :Prognosis ;
+            :life_expectancy "5 - 25 years"^^xsd:string ;
+            :life_quality "signoficantly affected"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis3
+:prognosis3 rdf:type owl:NamedIndividual ;
+            :life_expectancy "30 -70 years"^^xsd:string ;
+            :life_quality "affected"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis4
+:prognosis4 rdf:type owl:NamedIndividual ;
+            :life_expectancy "normal"^^xsd:string ;
+            :life_quality "affected"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis5
+:prognosis5 rdf:type owl:NamedIndividual ;
+            :life_quality "50 years"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/protein1
+:protein1 rdf:type owl:NamedIndividual ,
+                   :Protein ;
+          :hasUniProtID :protein_id1 ;
+          :function "Mediates GPI anchoring in the endoplasmic reticulum"^^xsd:string ;
+          :name_raredisease "GPI"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/protein2
+:protein2 rdf:type owl:NamedIndividual ;
+          :hasUniProtID :protein_id2 ;
+          :function "Neuronal development and synaptic plasticity"^^xsd:string ;
+          :name_protein "Fragile X messenger ribonucleoprotein 1"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/protein3
+:protein3 rdf:type owl:NamedIndividual ;
+          :hasUniProtID :protein3_id ;
+          :function "Structural component of the 10-12 nm diameter microfibrils of the extracellular matrix"^^xsd:string ;
+          :name_protein "Fibriline 1"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/protein3_id
+:protein3_id rdf:type owl:NamedIndividual ;
+             :valueUniProtID "P35555"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/protein4_1
+:protein4_1 rdf:type owl:NamedIndividual ;
+            :hasUniProtID :protein_id41 ;
+            :function "Neuronal development and synaptic plasticity"^^xsd:string ;
+            :valueGeneID "Fibriline 1"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/protein4_2
+:protein4_2 rdf:type owl:NamedIndividual ;
+            :hasUniProtID :protein_id42 ;
+            :function "Cell surface receptor for SEMA4A and for class 3 semaphorins"^^xsd:string ;
+            :name_protein "Plexin-D1"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id1
+:protein_id1 rdf:type owl:NamedIndividual ,
+                      :UniProtID ;
+             :valueUniProtID "Q92643"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id2
+:protein_id2 rdf:type owl:NamedIndividual ;
+             :valueUniProtID "Q06787"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id41
+:protein_id41 rdf:type owl:NamedIndividual ;
+              :valueUniProtID "P35555"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id42
+:protein_id42 rdf:type owl:NamedIndividual ;
+              :valueUniProtID "O60673"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/publication1
+:publication1 rdf:type owl:NamedIndividual ,
+                       :Publication ;
+              :hasAuthor :investigator1 ;
+              :hasDOI :doi1 ;
+              :journal "Medicina Clinica"^^xsd:string ;
+              :publicated_on "2008-11-16"^^xsd:string ;
+              :title "Paroxysmal nocturnal hemoglobinuria"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/publication2
+:publication2 rdf:type owl:NamedIndividual ,
+                       :Publication ;
+              :hasAuthor :investigator2 ;
+              :hasDOI :doi2 ;
+              :journal "Nature Reviews"^^xsd:string ;
+              :publicated_on "2017-09-29"^^xsd:string ;
+              :title "Fragile X syndrome"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/publication3
+:publication3 rdf:type owl:NamedIndividual ;
+              :hasDOI :doi3 ;
+              :journal "Portuguese Journal of Cardiology"^^xsd:string ;
+              :publicated_on "2020-04-04"^^xsd:string ;
+              :title "Marfan syndrome revisited: From genetics to the clinic"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease1
+:rare_disease1 rdf:type owl:NamedIndividual ,
+                        :RareDisease ;
+               :affectsToBodySystem :body_system1 ;
+               :appearsDocumentedIn :publication1 ;
+               :hasDiagnosticProcedure :diagnostic_procedure1 ;
+               :hasOrigin :monogenetic1 ;
+               :hasPrevalence :prevalence1 ;
+               :hasPrognosis :prognosis1 ;
+               :hasSymptom :symptom1 ;
+               :name_raredisease "paroxymal nocturnal hemoglobinuria"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease2
+:rare_disease2 rdf:type owl:NamedIndividual ,
+                        :RareDisease ;
+               :affectsToBodySystem :body_system2 ;
+               :appearsDocumentedIn :publication2 ;
+               :hasDiagnosticProcedure :diagnosis2 ;
+               :hasOrigin :monogenetic2 ;
+               :hasPrognosis :prognosis2 ;
+               :hasSymptom :symptom2 ;
+               :hasTreatment :treatment2 ;
+               :isDefinedBy :prevalence2 ;
+               :wasDiscoveredBy :investigator2 ;
+               :appereance_age "childhood"^^xsd:string ;
+               :name_raredisease "fragile x syndrom"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease3
+:rare_disease3 rdf:type owl:NamedIndividual ;
+               :affectsToBodySystem :body_system3_1 ,
+                                    :body_system3_2 ;
+               :appearsDocumentedIn :publication3 ;
+               :hasDiagnosticProcedure :diagnosis3 ;
+               :hasOrigin :monogenetic3 ;
+               :hasPrognosis :prognosis3 ;
+               :hasSymptom :symptom3 ;
+               :hasTreatment :treatment3 ;
+               :isDefinedBy :prevalence3 ;
+               :appereance_age "any age"^^xsd:string ;
+               :name_raredisease "marfan syndrome"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease4
+:rare_disease4 rdf:type owl:NamedIndividual ;
+               :affectsToBodySystem :body_system4 ;
+               :hasDiagnosticProcedure :diagnosis4 ;
+               :hasOrigin :poligenic4 ;
+               :hasPrevalence :prevalence4 ;
+               :hasPrognosis :prognosis4 ;
+               :hasSymptom :symptom4 ;
+               :hasTreatment :treatment4 ;
+               :appereance_age "childhood"^^xsd:string ;
+               :name_raredisease "moebius syndrom"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease5
+:rare_disease5 rdf:type owl:NamedIndividual ;
+               :affectsToBodySystem :body_system5_1 ,
+                                    :body_system5_2 ;
+               :hasDiagnosticProcedure :diasgnosis5 ;
+               :hasOrigin :chromosomic5 ;
+               :hasPrevalence :prevalence5 ;
+               :hasPrognosis :prognosis5 ;
+               :hasSymptom :symptom5 ;
+               :hasTreatment :treatment5 ;
+               :appereance_age "birth time"^^xsd:string ;
+               :name_raredisease "cri du cat syndrome"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/somatic5
+:somatic5 rdf:type owl:NamedIndividual .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom1
+:symptom1 rdf:type owl:NamedIndividual ,
+                   :Symptom ;
+          :symptom_description "anemia"^^xsd:string ,
+                               "torax pain"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom2
+:symptom2 rdf:type owl:NamedIndividual ,
+                   :Symptom ;
+          :symptom_description "hyperactivity"^^xsd:string ,
+                               "lerning problems"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom3
+:symptom3 rdf:type owl:NamedIndividual ;
+          :symptom_description "heart murmurs"^^xsd:string ,
+                               "protruding sternum"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom4
+:symptom4 rdf:type owl:NamedIndividual ;
+          :symptom_description "7th cranial nerve palsy"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom5
+:symptom5 rdf:type owl:NamedIndividual ;
+          :symptom_description "cry sound similar to a cat meow"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission1
+:transmission1 rdf:type owl:NamedIndividual .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission2
+:transmission2 rdf:type owl:NamedIndividual ;
+               :isXLinked :inheritance2 .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission3
+:transmission3 rdf:type owl:NamedIndividual ;
+               :isAutosomalD :inheritance3 .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission4
+:transmission4 rdf:type owl:NamedIndividual .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission5
+:transmission5 rdf:type owl:NamedIndividual .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment1
+:treatment1 rdf:type owl:NamedIndividual ,
+                     :Treatment ;
+            :clinical_center "any"^^xsd:string ;
+            :medication "complement inhibitor"^^xsd:string ;
+            :treatment_description "transfusion"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment2
+:treatment2 rdf:type owl:NamedIndividual ,
+                     :Treatment ;
+            :clinical_center "any"^^xsd:string ;
+            :treatment_description "physiotherapy"^^xsd:string ,
+                                   "speech therapy"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment3
+:treatment3 rdf:type owl:NamedIndividual ;
+            :clinical_center "any"^^xsd:string ;
+            :medication "beta blockers"^^xsd:string ;
+            :treatment_description "multidisciplinary"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment4
+:treatment4 rdf:type owl:NamedIndividual ;
+            :treatment_description "microneurovascular transfer of a free muscle"^^xsd:string .
+
+
+###  http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment5
+:treatment5 rdf:type owl:NamedIndividual ;
+            :treatment_description "multidisciplinary"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
