@@ -1,0 +1,1050 @@
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-nc/4.0/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsOneGene
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsOneGene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsOneGene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsOneGene> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Monogenetic> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsOneGene> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Gene> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsSeveralGenes
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsSeveralGenes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsSeveralGenes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Poligenetic> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsSeveralGenes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Gene> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsToBodySystem
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsToBodySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsToBodySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsToBodySystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/RareDisease> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsToBodySystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/BodySystem> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/appearsDocumentedIn
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/appearsDocumentedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/appearsDocumentedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/appearsDocumentedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/RareDisease> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/appearsDocumentedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Publication> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/encodesFor
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/encodesFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/encodesFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/encodesFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Gene> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/encodesFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Protein> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/hasAuthor
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasAuthor> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPublication> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasAuthor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Publication> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasAuthor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Investigator> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDOI
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDOI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDOI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDOI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Publication> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDOI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/DOI> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDiagnosticProcedure
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDiagnosticProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDiagnosticProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDiagnosticProcedure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/RareDisease> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDiagnosticProcedure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/DiagnosticProcedure> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/hasGeneID
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasGeneID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasGeneID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasGeneID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Gene> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasGeneID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/GeneID> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/hasORCID
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasORCID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasORCID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasORCID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Investigator> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasORCID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/ORCID> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/hasOrigin
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/RareDisease> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasOrigin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Genetic> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrevalence
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrevalence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrevalence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrevalence> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Disease> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrevalence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Prevalence> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrognosis
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrognosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrognosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrognosis> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/RareDisease> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrognosis> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Prognosis> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPublication
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPublication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPublication> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Investigator> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPublication> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Publication> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/hasSymptom
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasSymptom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasSymptom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasSymptom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/RareDisease> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasSymptom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Symptom> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/hasTreatment
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasTreatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasTreatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasTreatment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/RareDisease> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasTreatment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Treatment> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/hasUniProtID
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasUniProtID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasUniProtID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasUniProtID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Protein> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/hasUniProtID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/UniProtID> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/isAutosomalD
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isAutosomalD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isAutosomalD> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Inherited> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isAutosomalD> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/AutosomalDominant> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/isAutosomalR
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isAutosomalR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isAutosomalR> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Inherited> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isAutosomalR> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/AutosomalRecessive> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/isDefinedBy
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/RareDisease> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isDefinedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Prevalence> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/isNotTransmited
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isNotTransmited> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isNotTransmited> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isNotTransmited> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Genetic> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isNotTransmited> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/NotInherited> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/isSexual
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isSexual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isSexual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isSexual> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Chromosomic> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isSexual> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Sexual> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/isSomatic
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isSomatic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isSomatic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isSomatic> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Chromosomic> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isSomatic> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Somatic> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/isTransmited
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isTransmited> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isTransmited> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isTransmited> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Genetic> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isTransmited> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Inherited> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/isXLinked
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isXLinked> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isXLinked> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Inherited> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isXLinked> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/XLinked> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/isYLinked
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isYLinked> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isYLinked> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Inherited> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/isYLinked> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/YLinked> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/wasDiscoveredBy
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/wasDiscoveredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/wasDiscoveredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/wasDiscoveredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/RareDisease> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/wasDiscoveredBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Investigator> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/appereance_age
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/appereance_age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/appereance_age> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/RareDisease> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/appereance_age> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/chr_letter
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/chr_letter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/chr_letter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Sexual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/chr_letter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/chr_number
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/chr_number> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/chr_number> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Somatic> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/chr_number> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/circulatory_organ
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/circulatory_organ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/circulatory_organ> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/CirculatorySystem> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/circulatory_organ> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/clinical_center
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/clinical_center> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/clinical_center> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Treatment> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/clinical_center> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnostic_procedure_time
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnostic_procedure_time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnostic_procedure_time> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/DiagnosticProcedure> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnostic_procedure_time> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/digestive_organ
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/digestive_organ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/digestive_organ> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/DigestiveSystem> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/digestive_organ> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/endocrine_organ
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/endocrine_organ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/endocrine_organ> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/EndocrineSystem> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/endocrine_organ> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/excretory_organ
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/excretory_organ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/excretory_organ> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/ExcretorySystem> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/excretory_organ> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/first_name
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/first_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/first_name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Investigator> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/first_name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/frequency
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/frequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/frequency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Prevalence> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/frequency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/function
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/function> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Protein> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/function> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/institution
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/institution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/institution> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Investigator> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/institution> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/journal
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/journal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/journal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Publication> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/journal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/last_name
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/last_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/last_name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Investigator> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/last_name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/life_expectancy
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/life_expectancy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/life_expectancy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Prognosis> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/life_expectancy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/life_quality
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/life_quality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/life_quality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Prognosis> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/life_quality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/location
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/location> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/clinical_center> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Treatment> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/location> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/locomotor_organ
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/locomotor_organ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/locomotor_organ> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/LocomotorSystem> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/locomotor_organ> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/locus
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/locus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/locus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Gene> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/locus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/medication
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/medication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/medication> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Treatment> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/medication> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/name_diagnosticprocedure
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/name_diagnosticprocedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/name_diagnosticprocedure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/DiagnosticProcedure> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/name_diagnosticprocedure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/name_disease
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/name_disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/name_disease> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Disease> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/name_disease> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/name_gene
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/name_gene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/name_gene> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Gene> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/name_gene> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/name_protein
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/name_protein> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/name_protein> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Protein> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/name_protein> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/name_raredisease
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/name_raredisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/name_raredisease> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/RareDisease> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/name_raredisease> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/nervous_organ
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/nervous_organ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/nervous_organ> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/NervousSystem> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/nervous_organ> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/publicated_on
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publicated_on> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publicated_on> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Publication> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publicated_on> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/reproductive_organ
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/reproductive_organ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/reproductive_organ> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/ReproductiveSystem> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/reproductive_organ> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/respiratory_organ
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/respiratory_organ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/respiratory_organ> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/RespiratorySystem> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/respiratory_organ> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom_description
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom_description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom_description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Symptom> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom_description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/title
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Publication> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment_description
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment_description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment_description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Treatment> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment_description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/valueDOI
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/valueDOI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/valueDOI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/DOI> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/valueDOI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/valueGeneID
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/valueGeneID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/valueGeneID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/GeneID> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/valueGeneID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/valueORCID
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/valueORCID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/valueORCID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/ORCID> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/valueORCID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/valueUniProtID
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/valueUniProtID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/valueUniProtID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/UniProtID> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/valueUniProtID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/what_is_affected
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/what_is_affected> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/what_is_affected> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Chromosomic> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/what_is_affected> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/AutosomalDominant
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/AutosomalDominant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/AutosomalDominant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/TypeOfInheritance> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/AutosomalDominant> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/def/mubc/marinayana/rarediseases/AutosomalRecessive> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/AutosomalDominant> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/def/mubc/marinayana/rarediseases/XLinked> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/AutosomalDominant> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/def/mubc/marinayana/rarediseases/YLinked> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/AutosomalRecessive
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/AutosomalRecessive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/AutosomalRecessive> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/TypeOfInheritance> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/AutosomalRecessive> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/def/mubc/marinayana/rarediseases/XLinked> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/AutosomalRecessive> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/def/mubc/marinayana/rarediseases/YLinked> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/BodySystem
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/BodySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/Chromosome
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Chromosome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/Chromosomic
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Chromosomic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Chromosomic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Genetic> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Chromosomic> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Monogenetic> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Chromosomic> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Poligenetic> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/CirculatorySystem
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/CirculatorySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/CirculatorySystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/BodySystem> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/DOI
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/DOI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/DOI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/ID> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/DOI> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/def/mubc/marinayana/rarediseases/GeneID> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/DOI> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/def/mubc/marinayana/rarediseases/ORCID> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/DOI> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/def/mubc/marinayana/rarediseases/UniProtID> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/DiagnosticProcedure
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/DiagnosticProcedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/DigestiveSystem
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/DigestiveSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/DigestiveSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/BodySystem> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/Disease
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Disease> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3id.org/def/mubc/marinayana/rarediseases/disease> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/EndocrineSystem
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/EndocrineSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/EndocrineSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/BodySystem> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/ExcretorySystem
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/ExcretorySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/ExcretorySystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/BodySystem> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/Gene
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Gene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Gene> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3id.org/def/mubc/marinayana/rarediseases/gene> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/GeneID
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/GeneID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/GeneID> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/ID> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/GeneID> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/def/mubc/marinayana/rarediseases/ORCID> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/GeneID> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/def/mubc/marinayana/rarediseases/UniProtID> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/Genetic
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Genetic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/ID
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/Inherited
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Inherited> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Inherited> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/WayOfTransmission> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Inherited> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/def/mubc/marinayana/rarediseases/NotInherited> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/Investigator
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Investigator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/LocomotorSystem
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/LocomotorSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/LocomotorSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/BodySystem> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/Monogenetic
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Monogenetic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Monogenetic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Genetic> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Monogenetic> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Poligenetic> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/NervousSystem
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/NervousSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/NervousSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/BodySystem> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/NotInherited
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/NotInherited> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/NotInherited> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/WayOfTransmission> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/NotInherited> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/def/mubc/marinayana/rarediseases/TypeOfInheritance> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/ORCID
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/ORCID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/ORCID> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/ORCID> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/ID> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/ORCID> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/def/mubc/marinayana/rarediseases/UniProtID> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/Poligenetic
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Poligenetic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Poligenetic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Genetic> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/Prevalence
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Prevalence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/Prognosis
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Prognosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/Protein
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Protein> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Protein> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3id.org/def/mubc/marinayana/rarediseases/protein> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/Publication
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Publication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/RareDisease
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/RareDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/RareDisease> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Disease> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/ReproductiveSystem
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/ReproductiveSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/ReproductiveSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/BodySystem> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/RespiratorySystem
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/RespiratorySystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/RespiratorySystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/BodySystem> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/Sexual
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Sexual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Sexual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Chromosome> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Sexual> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Somatic> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/Somatic
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Somatic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Somatic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Chromosome> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/Symptom
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Symptom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/Treatment
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/Treatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/TypeOfInheritance
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/TypeOfInheritance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/UniProtID
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/UniProtID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/UniProtID> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/ID> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/WayOfTransmission
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/WayOfTransmission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/XLinked
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/XLinked> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/XLinked> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/TypeOfInheritance> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/XLinked> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/def/mubc/marinayana/rarediseases/YLinked> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/YLinked
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/YLinked> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/YLinked> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/def/mubc/marinayana/rarediseases/TypeOfInheritance> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/disease
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/disease> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.bioontology.org/ontology/SNOMEDCT/64572001> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/gene
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gene> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16612> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C188272> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/protein
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17021> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/CirculatorySystem> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/circulatory_organ> "arteries" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/circulatory_organ> "veins" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/NervousSystem> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/nervous_organ> "brain" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system3_1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system3_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system3_1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/circulatory_organ> "aorta" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system3_2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system3_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system3_2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/locomotor_organ> "finguer bones" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system3_2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/locomotor_organ> "spine" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system4
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/nervous_organ> "seventh cranial nerve" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system5_1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system5_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system5_1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/nervous_organ> "brain" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system5_2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system5_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system5_2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/locomotor_organ> "muscles" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/chromosomic5
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/chromosomic5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/chromosomic5> <http://www.w3id.org/def/mubc/marinayana/rarediseases/isNotTransmited> <http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission5> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/chromosomic5> <http://www.w3id.org/def/mubc/marinayana/rarediseases/isSomatic> <http://www.w3id.org/def/mubc/marinayana/rarediseases/somatic5> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/chromosomic5> <http://www.w3id.org/def/mubc/marinayana/rarediseases/chr_number> "5" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/DiagnosticProcedure> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnostic_procedure_time> "postnatal" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnostic_procedure_time> "prenatal" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/name_diagnosticprocedure> "DNA analysis" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis3
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnostic_procedure_time> "postnatal" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnostic_procedure_time> "prenatal" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/name_diagnosticprocedure> "Ghent criteria" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis4
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/name_diagnosticprocedure> "clinical criteria" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/name_diagnosticprocedure> "postnatal" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnostic_procedure1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnostic_procedure1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnostic_procedure1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/DiagnosticProcedure> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnostic_procedure1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnostic_procedure_time> "postnatal" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnostic_procedure1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/name_diagnosticprocedure> "flux citometry" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/diasgnosis5
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diasgnosis5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diasgnosis5> <http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnostic_procedure_time> "postnatal" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/diasgnosis5> <http://www.w3id.org/def/mubc/marinayana/rarediseases/name_diagnosticprocedure> "observation" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/doi1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/doi1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/doi1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/DOI> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/doi1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/valueDOI> "https://doi.org/10.1157/13127921" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/doi2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/doi2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/doi2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/DOI> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/doi2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/valueDOI> "https://doi.org/10.1038/nrdp.2017.65" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/doi3
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/doi3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/doi3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/valueDOI> "https://doi.org/10.1016/j.repc.2019.09.008" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/gen1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Gene> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/encodesFor> <http://www.w3id.org/def/mubc/marinayana/rarediseases/protein1> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasGeneID> <http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id1> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/locus> "Chromosome X: 15,319,452-15,335,554" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/name_gene> "PIGA" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/gen2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/encodesFor> <http://www.w3id.org/def/mubc/marinayana/rarediseases/protein2> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/encodesFor> <http://www.w3id.org/def/mubc/marinayana/rarediseases/protein4_2> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasGeneID> <http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id2> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/locus> "Chromosome X: 147,911,919-147,951,125" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/name_gene> "FMR1" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/gen3
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/encodesFor> <http://www.w3id.org/def/mubc/marinayana/rarediseases/protein3> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasGeneID> <http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id3> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/locus> "Chromosome 15: 48,408,313-48,645,721" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/name_gene> "FBN1" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/gen4_1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen4_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen4_1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/encodesFor> <http://www.w3id.org/def/mubc/marinayana/rarediseases/protein4_1> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen4_1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasGeneID> <http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id4> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen4_1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/locus> "Chromosome 3: 129,555,214-129,606,676" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen4_1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/name_gene> "PLXND1" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/gen4_2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen4_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen4_2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasGeneID> <http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id42> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen4_2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/locus> "Chromosome 6: 111,299,028-111,483,715" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gen4_2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/name_gene> "REV3L" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/GeneID> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/valueGeneID> "ENSG00000165195" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/valueGeneID> "ENSG00000102081" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id3
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/valueGeneID> "ENSG00000166147" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id4
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/valueGeneID> "ENSG00000004399" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id42
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/gene_id42> <http://www.w3id.org/def/mubc/marinayana/rarediseases/valueGeneID> "ENSG00000009413" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/inheritance2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/inheritance2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/inheritance3
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/inheritance3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Investigator> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasORCID> <http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid1> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/first_name> "Pilar" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/institution> "Johns Hopkins University School of Medicine" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/last_name> "Hernandez Campo" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Investigator> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/first_name> "Randi" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/institution> "University of California" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/last_name> "Hagerman" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator3
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasORCID> <http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid3> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPublication> <http://www.w3id.org/def/mubc/marinayana/rarediseases/publication3> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/first_name> "Gomes" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/first_name> "Sonia" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/institution> "Centro Hospitalar Universitário Cova da Beira" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/monogenetic1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/monogenetic1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/monogenetic1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Monogenetic> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/monogenetic1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsOneGene> <http://www.w3id.org/def/mubc/marinayana/rarediseases/gen1> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/monogenetic1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/isNotTransmited> <http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission1> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/monogenetic2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/monogenetic2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/monogenetic2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Monogenetic> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/monogenetic2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsOneGene> <http://www.w3id.org/def/mubc/marinayana/rarediseases/gen2> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/monogenetic2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/isTransmited> <http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission2> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/monogenetic3
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/monogenetic3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/monogenetic3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsOneGene> <http://www.w3id.org/def/mubc/marinayana/rarediseases/gen3> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/monogenetic3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/isTransmited> <http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission3> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/ORCID> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/valueORCID> "0000-5555-1188-4444" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/ORCID> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/valueORCID> "0001-7676-9999-5454" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid3
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/orcid3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/valueORCID> "0201-9898-8787-4445" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/poligenic4
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/poligenic4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/poligenic4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsSeveralGenes> <http://www.w3id.org/def/mubc/marinayana/rarediseases/gen4_1> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/poligenic4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsSeveralGenes> <http://www.w3id.org/def/mubc/marinayana/rarediseases/gen4_2> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/poligenic4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/isNotTransmited> <http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission4> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Prevalence> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/frequency> "1-9 / 100 000" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Prevalence> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/frequency> "1 / 5000" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence3
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/frequency> "1-5 / 10 000" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence4
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/frequency> "1 / 500 000" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence5
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence5> <http://www.w3id.org/def/mubc/marinayana/rarediseases/frequency> "1 / 20 000 - 50 000" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Prognosis> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/life_expectancy> "10-15 years" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/life_expectancy> "significantly affected" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Prognosis> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/life_expectancy> "5 - 25 years" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/life_quality> "signoficantly affected" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis3
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/life_expectancy> "30 -70 years" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/life_quality> "affected" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis4
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/life_expectancy> "normal" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/life_quality> "affected" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis5
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis5> <http://www.w3id.org/def/mubc/marinayana/rarediseases/life_quality> "50 years" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/protein1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Protein> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasUniProtID> <http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id1> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/function> "Mediates GPI anchoring in the endoplasmic reticulum" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/name_raredisease> "GPI" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/protein2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasUniProtID> <http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id2> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/function> "Neuronal development and synaptic plasticity" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/name_protein> "Fragile X messenger ribonucleoprotein 1" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/protein3
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasUniProtID> <http://www.w3id.org/def/mubc/marinayana/rarediseases/protein3_id> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/function> "Structural component of the 10-12 nm diameter microfibrils of the extracellular matrix" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/name_protein> "Fibriline 1" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/protein3_id
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein3_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein3_id> <http://www.w3id.org/def/mubc/marinayana/rarediseases/valueUniProtID> "P35555" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/protein4_1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein4_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein4_1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasUniProtID> <http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id41> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein4_1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/function> "Neuronal development and synaptic plasticity" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein4_1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/valueGeneID> "Fibriline 1" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/protein4_2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein4_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein4_2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasUniProtID> <http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id42> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein4_2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/function> "Cell surface receptor for SEMA4A and for class 3 semaphorins" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein4_2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/name_protein> "Plexin-D1" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/UniProtID> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/valueUniProtID> "Q92643" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/valueUniProtID> "Q06787" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id41
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id41> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id41> <http://www.w3id.org/def/mubc/marinayana/rarediseases/valueUniProtID> "P35555" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id42
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id42> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/protein_id42> <http://www.w3id.org/def/mubc/marinayana/rarediseases/valueUniProtID> "O60673" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/publication1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publication1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publication1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Publication> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publication1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasAuthor> <http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator1> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publication1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDOI> <http://www.w3id.org/def/mubc/marinayana/rarediseases/doi1> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publication1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/journal> "Medicina Clinica" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publication1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/publicated_on> "2008-11-16" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publication1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/title> "Paroxysmal nocturnal hemoglobinuria" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/publication2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publication2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publication2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Publication> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publication2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasAuthor> <http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator2> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publication2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDOI> <http://www.w3id.org/def/mubc/marinayana/rarediseases/doi2> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publication2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/journal> "Nature Reviews" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publication2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/publicated_on> "2017-09-29" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publication2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/title> "Fragile X syndrome" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/publication3
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publication3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publication3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDOI> <http://www.w3id.org/def/mubc/marinayana/rarediseases/doi3> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publication3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/journal> "Portuguese Journal of Cardiology" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publication3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/publicated_on> "2020-04-04" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/publication3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/title> "Marfan syndrome revisited: From genetics to the clinic" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/RareDisease> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsToBodySystem> <http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system1> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/appearsDocumentedIn> <http://www.w3id.org/def/mubc/marinayana/rarediseases/publication1> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDiagnosticProcedure> <http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnostic_procedure1> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasOrigin> <http://www.w3id.org/def/mubc/marinayana/rarediseases/monogenetic1> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrevalence> <http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence1> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrognosis> <http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis1> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasSymptom> <http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom1> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/name_raredisease> "paroxymal nocturnal hemoglobinuria" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/RareDisease> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsToBodySystem> <http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system2> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/appearsDocumentedIn> <http://www.w3id.org/def/mubc/marinayana/rarediseases/publication2> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDiagnosticProcedure> <http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis2> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasOrigin> <http://www.w3id.org/def/mubc/marinayana/rarediseases/monogenetic2> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrognosis> <http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis2> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasSymptom> <http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom2> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasTreatment> <http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment2> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/isDefinedBy> <http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence2> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/wasDiscoveredBy> <http://www.w3id.org/def/mubc/marinayana/rarediseases/investigator2> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/appereance_age> "childhood" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/name_raredisease> "fragile x syndrom" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease3
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsToBodySystem> <http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system3_1> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsToBodySystem> <http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system3_2> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/appearsDocumentedIn> <http://www.w3id.org/def/mubc/marinayana/rarediseases/publication3> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDiagnosticProcedure> <http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis3> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasOrigin> <http://www.w3id.org/def/mubc/marinayana/rarediseases/monogenetic3> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrognosis> <http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis3> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasSymptom> <http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom3> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasTreatment> <http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment3> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/isDefinedBy> <http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence3> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/appereance_age> "any age" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/name_raredisease> "marfan syndrome" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease4
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsToBodySystem> <http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system4> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDiagnosticProcedure> <http://www.w3id.org/def/mubc/marinayana/rarediseases/diagnosis4> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasOrigin> <http://www.w3id.org/def/mubc/marinayana/rarediseases/poligenic4> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrevalence> <http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence4> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrognosis> <http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis4> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasSymptom> <http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom4> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasTreatment> <http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment4> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/appereance_age> "childhood" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/name_raredisease> "moebius syndrom" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease5
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease5> <http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsToBodySystem> <http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system5_1> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease5> <http://www.w3id.org/def/mubc/marinayana/rarediseases/affectsToBodySystem> <http://www.w3id.org/def/mubc/marinayana/rarediseases/body_system5_2> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease5> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasDiagnosticProcedure> <http://www.w3id.org/def/mubc/marinayana/rarediseases/diasgnosis5> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease5> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasOrigin> <http://www.w3id.org/def/mubc/marinayana/rarediseases/chromosomic5> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease5> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrevalence> <http://www.w3id.org/def/mubc/marinayana/rarediseases/prevalence5> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease5> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasPrognosis> <http://www.w3id.org/def/mubc/marinayana/rarediseases/prognosis5> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease5> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasSymptom> <http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom5> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease5> <http://www.w3id.org/def/mubc/marinayana/rarediseases/hasTreatment> <http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment5> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease5> <http://www.w3id.org/def/mubc/marinayana/rarediseases/appereance_age> "birth time" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/rare_disease5> <http://www.w3id.org/def/mubc/marinayana/rarediseases/name_raredisease> "cri du cat syndrome" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/somatic5
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/somatic5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Symptom> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom_description> "anemia" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom_description> "torax pain" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Symptom> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom_description> "hyperactivity" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom_description> "lerning problems" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom3
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom_description> "heart murmurs" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom_description> "protruding sternum" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom4
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom_description> "7th cranial nerve palsy" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom5
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom5> <http://www.w3id.org/def/mubc/marinayana/rarediseases/symptom_description> "cry sound similar to a cat meow" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/isXLinked> <http://www.w3id.org/def/mubc/marinayana/rarediseases/inheritance2> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission3
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/isAutosomalD> <http://www.w3id.org/def/mubc/marinayana/rarediseases/inheritance3> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission4
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission5
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/transmission5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment1
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Treatment> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/clinical_center> "any" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/medication> "complement inhibitor" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment1> <http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment_description> "transfusion" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment2
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/def/mubc/marinayana/rarediseases/Treatment> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/clinical_center> "any" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment_description> "physiotherapy" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment2> <http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment_description> "speech therapy" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment3
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/clinical_center> "any" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/medication> "beta blockers" .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment3> <http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment_description> "multidisciplinary" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment4
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment4> <http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment_description> "microneurovascular transfer of a free muscle" .
+# 
+# http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment5
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment5> <http://www.w3id.org/def/mubc/marinayana/rarediseases/treatment_description> "multidisciplinary" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
